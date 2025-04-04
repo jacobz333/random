@@ -1,0 +1,40 @@
+\documentclass{article}
+% Layout
+\linespread{1.15} % line spacing
+\usepackage{geometry}
+\geometry{ % set margins
+    top=1cm,
+    bottom=1cm,
+    left=1cm,
+    right=1cm
+}
+\pagenumbering{gobble} % suppress page numbers
+
+% Math
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+% Useful packages
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz} % drawing and plotting
+\usetikzlibrary{math} % tikz math
+
+% main document begins
+\begin{document}
+\begin{center} % title
+    \textbf{Title}. name. date
+\end{center}
+\noindent
+\underline{Q\#}: text\\ % simple question - answer
+\\\\
+\begin{tikzpicture}[overlay] % question with no parts
+    \node[draw, circle] at (-0.1, 0.5) {Q\#};
+\end{tikzpicture}
+\ \ text\\
+\begin{itemize} % question with multiple parts
+    \item[(a)] \begin{tikzpicture}[overlay]
+        \node[draw, circle] at (-1, 0.5) {Q\#};
+    \end{tikzpicture}
+    text
+\end{itemize}
+\end{document}
