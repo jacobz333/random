@@ -13,5 +13,5 @@ mpl.rcParams['axes.grid.which'] = 'both'    # show both major and minor axes
 mpl.rcParams['xtick.minor.visible'] = True
 mpl.rcParams['ytick.minor.visible'] = True
 mpl.rcParams['figure.figsize'] = (6.4, 4.8) # figure size (default=(6.4,4.8))
-plt.rcParams['figure.dpi'] = 300            # increases resolution (default=100). dpi = dots-per-inch
-plt.rcParams['savefig.dpi'] = 300
+mpl.rcParams['figure.dpi'] = 100            # dpi=100 for display (default=100). dpi = dots-per-inch
+mpl.rcParams['savefig.dpi'] = 300           # increases resolution for saving figures 
