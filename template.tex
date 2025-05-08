@@ -27,8 +27,11 @@
 \newcommand{\p  }[1]{\left( #1 \right)} % parentheses
 \newcommand{\sq }[1]{\left[ #1 \right]} % square brackets
 \newcommand{\abs}[1]{\left| #1 \right|} % absolute value
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}   % floor
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}      % ceiling
 
-\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}} % partial derivative
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}            %     partial derivative
+\newcommand{\pdn}[3]{\dfrac{\partial #1^{#3}}{\partial #2^{#3}}} % nth partial derivative
 
 % math mode fonts
 \renewcommand{\bf }[1]{\mathbf{#1}}  % bold
@@ -40,7 +43,9 @@
 % main document begins
 \begin{document}
 \begin{center} % title
-    \textbf{Title}. name. date
+    \textbf{Title}: name. XX/XX/XXXX\\
+    Dicussion Partner(s): name.\\
+    References: title.
 \end{center}
 \noindent
 \underline{Q\#}: text\\ % simple question - answer
